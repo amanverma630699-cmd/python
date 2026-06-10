@@ -1,2 +1,3 @@
 # python
-this repository is only for python project
+this repository is only for python 
+pru  
