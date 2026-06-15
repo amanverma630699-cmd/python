@@ -24,13 +24,12 @@ class contact_book:
             "Number_phone": phone,
             "Email_ID": email}
 
-    def View_Contacts(self,name):
-           contact = self.person.get(name)
-           if contact:
-                print(contact)
-           else:
-                print("contact name is invalid")
-        
+    def View_Contacts(self):
+        if len(self.person)==0:
+            print("no contact")
+        else:
+            print(self.person)
+  
     def Search_Contact(self, name):
         if len(self.person)==0:
             print("no contact")
@@ -61,7 +60,7 @@ class contact_book:
                if contact:
                    if key in contact:
                       del contact[key]
-                      print(f"key: {key} is deleted")
+                      print(f"key: {key} is delete")
                else:
                    print("contact name is invalid")
 contact=contact_book()
@@ -77,25 +76,26 @@ while True:
     
 
    if ch==1:
-         name=input("enter name: ")
-         phone=input("enter phone: ")
-         email=input("enter email: ")
-         contact.Add_Contact(name,phone,email)
-
+       name=input("enter the name: ")
+       phone=input("enter phone no: ")
+       email=input("enter email: ")
+       contact.Add_Contact(name,phone,email)
    elif ch==2:
-       contact.View_Contacts(input("enter name: "))
+       contact.View_Contacts()
    elif ch==3:
        contact.Search_Contact(input("enter name: "))
+
    elif ch==4:
-       name=input("enter name: ")
-       key=input("enter key to update: ")
-       value=input("enter new value: ")
-       contact.Update_Contact(name, key, value)
+       name=input("enter the name: ")
+       key=input("enter key name: ")
+       value=input("enter the value be change : ")
+       contact.Update_Contact(name,key,value)
    elif ch==5:
-       name=input("enter name: ")
-       key=input("enter key to delete: ")
-       contact.Delete_Contact(name, key)
+      name=input("enter the name: ")
+      key=input("enter key name: ")
+      contact.Delete_Contact(name,key)
    elif ch==6:
        break
    else:
        print("invalid choice")
+                 
