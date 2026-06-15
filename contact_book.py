@@ -28,8 +28,11 @@ class contact_book:
         if len(self.person)==0:
             print("no contact")
         else:
-            print(self.person)
-  
+            for i,(name,details) in enumerate(self.person.items(),start=1):
+                print(f"{i}. Name: {name}")
+                print(f"     Phone: {details.get('Number_phone')}")
+                print(f"     Email: {details.get('Email_ID')}")
+
     def Search_Contact(self, name):
         if len(self.person)==0:
             print("no contact")
