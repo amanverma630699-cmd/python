@@ -85,5 +85,5 @@ The goal of this repository is to:
 ### Author
 
 Aman Verma
-
+⭐ If you find these projects useful, consider giving the repository a star.
 Learning Python one project at a time 🚀
