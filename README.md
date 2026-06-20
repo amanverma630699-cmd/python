@@ -63,24 +63,8 @@ The goal of this repository is to:
 - Prepare for coding interviews and technical assessments.
 - Create a collection of solved programming problems.
 
----
 
-## Progress Tracker
 
-| Category | Status |
-|----------|--------|
-| Basic Python | ✅ |
-| Conditions | ✅ |
-| Loops | ✅ |
-| Functions | 🔄 In Progress |
-| Lists | 🔄 In Progress |
-| Searching | 🔄 In Progress |
-| Sorting | ⏳ Planned |
-| OOP | ⏳ Planned |
-| Data Structures | ⏳ Planned |
-| Algorithms | ⏳ Planned |
-
----
 
 ### Author
 
